@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面设计及开发</title>
+</head>
+<body>
+    <div class="container">
+        <!--声明一个块级元素-->
+        <div class="login-wrapper">
+            <div class="header">Login</div>
+                <div class="form-wrapper">
+                    <input name="userName" type="text" value="请输入用户名称" placeholder="username"  class="input-item">
+                    <input name="userName" type="text" value="请输入密码" placeholder="password"  class="input-item">
+                <div class="btn" >Login</div>
+            <div class="msg">
+                Don not hava a count? <a href="#">sign up</a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<style>
+    /*
+      *为通配符，删除页面中所有的默认元素；
+    */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /*
+    html高度设置为100%；
+    */
+    html{
+        height: 100%;
+    }
+    /*body高度设置为100%*/
+    body{
+        height: 100%;
+    }
+    /*声明一个容易，设置容器的百分比，背景颜色调整为渐变色*/
+    .container{
+        height: 100%;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    .login-wrapper{
+        /*设置背景颜色*/
+        background-color: white;
+        /*设置宽度和高度*/
+        width:350px;
+        height: 500px;
+        padding:20px;
+        /*设置圆角*/
+        border-radius:5px;
+        /*设置定位relative，进行绝对定位*/
+        position: relative;
+        left: 50%;
+        right: 50%;
+        top: 50%;
+        /*不知道自身宽度和高度情况下进行居中操作*/
+        transform: translate(-50%,-50%);
+    }
+    .login-wrapper .header{
+        /*字体大小设值为30个像素点*/
+        font-size: 30px;
+        /*字体位置居中*/
+        text-align: center;
+        /*设置文本的行高*/
+        line-height: 100px;
+        /*抬头字体进行加粗*/
+        font-weight: bold;
+    }
+    .login-wrapper .form-wrapper .input-item{
+        /*block设置为块级元素，inline设置为内联元素*/
+        display: block;
+        /*宽度调整*/
+        width: 100%;
+        /*取消边框*/
+        border:0;
+        /*设置下划线*/
+        border-bottom: 2px solid black ;
+        /*内填充10px*/
+        padding:10px;
+        margin-bottom: 20px;
+        /*边框宽度调整为3px，颜色为黑色，调整为整体实线*/
+        border-bottom: 3px solid black ;
+        /*字体大小为10px像素*/
+        font-size: 10px;
+    }
+
+    .login-wrapper .form-wrapper .btn{
+        text-align: center;
+        margin-top: 40px;
+        padding:5px;
+        width: 100%;
+        background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+        color: white;
+    }
+        /* 字体居中，行高100px*/
+    .login-wrapper .form-wrapper .msg{
+
+        text-align: center;
+        line-height: 100px;
+    }
+        /*修改字体颜色，删除下滑线*/
+    .login-wrapper .form-wrapper .msg a{
+        text-decoration-line: none;
+        color: #a6c1ee;
+    }
+</style>
+</html>
