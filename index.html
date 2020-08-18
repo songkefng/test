@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航栏</title>
+
+</head>
+<body>
+<div id="container">
+    <div class="header">
+        <div class="head-right">
+
+        </div>
+        <div class="header-left">
+            <div>
+                <span>IT</span>-精品网
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<style>
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    #container{
+        width: 100%;
+        height:40px;
+        background: whitesmoke;
+    }
+    .header{
+        width: 1200px;
+        height: 40px;
+        background: #a6c1ee;
+        border: 2px solid black;
+    }
+    .head-right{
+        width: 400px;
+        height: 40px;
+        background: salmon;
+        float: right;
+    }
+    .header-left{
+        width: 200px;
+        height: 40px;
+        background: pink;
+        float: left;
+    }
+    /*使用关系型伪类结构选择器*/
+  .header-left>div>span{
+      font-weight: bold;
+  }
+    .header-left>div{
+        line-height: 40px;
+    }
+
+
+</style>
+</html>
